@@ -1,0 +1,17 @@
+
+k
+java:S1104"PMake conn a static final constant or non-public and provide accessors if needed.(€ÙÄ§þÿÿÿÿ
+p
+java:S1104"UMake statement a static final constant or non-public and provide accessors if needed.(º‰ÊÚÿÿÿÿÿ
+<
+java:S1170	"!Make this final field static too.(ª€¤þÿÿÿÿ
+<
+java:S1170
+"!Make this final field static too.(É—¼êûÿÿÿÿ
+7
+java:S1170"!Make this final field static too.(±©‰‚
+<
+java:S1170"!Make this final field static too.(Œ”¹±þÿÿÿÿ
+V	java:S125"<This block of commented-out lines of code should be removed.(ñ¥ùšøÿÿÿÿ
+D
+java:S2115")Add password protection to this database.(Ì³Ö±ýÿÿÿÿ

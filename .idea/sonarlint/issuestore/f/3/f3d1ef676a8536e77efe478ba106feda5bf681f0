@@ -1,0 +1,39 @@
+
+b
+java:S1192"KDefine a constant instead of duplicating this literal "RESP_VENTE" 4 times.(§³èÆ
+g
+java:S1192„"KDefine a constant instead of duplicating this literal "RESP_ACHAT" 4 times.(ØÃ£‰şÿÿÿÿ
+a
+java:S1192~"FDefine a constant instead of duplicating this literal "ADMIN" 4 times.(è¨ÂŠıÿÿÿÿ
+k	java:S117{"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÓËŞ«üÿÿÿÿ
+l	java:S117ü"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÓËŞ«üÿÿÿÿ
+l	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÓËŞ«üÿÿÿÿ
+l	java:S117½"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÓËŞ«üÿÿÿÿ
+k	java:S116"WRename this field "AddressField" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ôú®b
+o	java:S116"URename this field "EmailField" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¤«„ùÿÿÿÿ
+o	java:S116"URename this field "FnameField" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(åûÕúÿÿÿÿ
+o	java:S116""URename this field "LnameField" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(£’³Ğûÿÿÿÿ
+j	java:S116%"URename this field "LoginField" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(›‚œæ
+m	java:S116("XRename this field "PasswordField" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(€«³è
+o	java:S116+"URename this field "PhoneField" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(×—ø²ùÿÿÿÿ
+n	java:S116."TRename this field "RoleField" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(È¯åşÿÿÿÿ
+u	java:S116K"[Rename this field "ConfirmPassField" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(åÔğíøÿÿÿÿ
+u	java:S116N"[Rename this field "CurrentPassField" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ì´„øÿÿÿÿ
+j	java:S116Q"VRename this field "Email2Field" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ô£ß,
+l	java:S116T"WRename this field "NewPassField" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÍÍ°
+l	java:S116Y"WRename this field "MessageLabel" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Èéæ…
+_
+java:S1659\"BDeclare "valid" and all following declarations on a separate line.(ÅòĞÙ8Å÷¿à1
+b	java:S100v"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(™åĞ
+<	java:S131}""Add a default case to this switch.(¢±ÔÍøÿÿÿÿ
+d	java:S100š"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(À“€Æ
+i	java:S100À"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¤ƒ‰Îıÿÿÿÿ
+d	java:S100ù"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(åïÛó
+=	java:S131ÿ""Add a default case to this switch.(¢±ÔÍøÿÿÿÿ
+A	java:S106‹"+Replace this use of System.out by a logger.(¦ôëí
+d	java:S100›"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(§Ã’Œ
+=	java:S131¡""Add a default case to this switch.(¢±ÔÍøÿÿÿÿ
+i	java:S100º"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(÷‡‚ßùÿÿÿÿ
+=	java:S131À""Add a default case to this switch.(¢±ÔÍøÿÿÿÿ
+i	java:S100Û"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(“ë“Õùÿÿÿÿ
+i	java:S100ò"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ê±ÆÄûÿÿÿÿ

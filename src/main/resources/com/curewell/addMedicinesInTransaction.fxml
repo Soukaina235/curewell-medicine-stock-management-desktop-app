@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="644.0" prefWidth="1018.0" style="-fx-background-color: #ECECE7;" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.curewell.TransactionController">
+    <children>
+        <TableView fx:id="medicineTable" layoutX="397.0" layoutY="152.0" prefHeight="408.0" prefWidth="564.0" style="-fx-background-insets: 0;">
+            <columns>
+                <TableColumn fx:id="medicineNameColumn" prefWidth="328.80003356933594" text="Medicine Name">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="name" />
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn fx:id="medicineQuantityColumn" minWidth="0.0" prefWidth="232.0" text="Quantity">
+
+                </TableColumn>
+            </columns>
+        </TableView>
+        <AnchorPane prefHeight="98.0" prefWidth="1018.0" styleClass="anchorpane" stylesheets="@styles.css">
+            <children>
+                <ImageView fitHeight="73.0" fitWidth="184.0" layoutX="417.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@images/logo.png" />
+                    </image>
+                </ImageView>
+            </children>
+        </AnchorPane>
+        <Label contentDisplay="CENTER" layoutX="39.0" layoutY="155.0" prefHeight="34.0" prefWidth="311.0" style="-fx-font-size: 20;" text="Add a Medicine to the Transaction" textFill="#0b1f52">
+            <font>
+                <Font name="Inter Black" size="38.0" />
+            </font>
+        </Label>
+        <TextField fx:id="quantityField" layoutX="41.0" layoutY="333.0" prefHeight="33.0" prefWidth="311.0" promptText="Quantity" styleClass="text" stylesheets="@styles.css" />
+        <JFXButton fx:id="addButton" layoutX="120.0" layoutY="414.0" onAction="#addMedicine" prefHeight="33.0" prefWidth="153.0" styleClass="anchorpane-btn" stylesheets="@styles.css" text="ADD" textFill="#0b1f52" />
+        <ComboBox fx:id="medicineField" layoutX="41.0" layoutY="251.0" onAction="#initialize" prefHeight="34.0" prefWidth="311.0" promptText="Medicine" />
+        <JFXButton fx:id="addButton1" layoutX="474.0" layoutY="578.0" onAction="#confirmTransaction" prefHeight="33.0" prefWidth="153.0" styleClass="anchorpane-btn" stylesheets="@styles.css" text="CONFIRM" textFill="#0b1f52" />
+    </children>
+</AnchorPane>
+

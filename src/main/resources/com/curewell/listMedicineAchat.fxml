@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<?import com.curewell.MedicineModifyDeleteCellFactory?>
+<AnchorPane id="AnchorPane" prefHeight="661.0" prefWidth="1200.0" style="-fx-background-color: #ECECE7;" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.curewell.ListMedicineController">
+    <children>
+        <JFXButton fx:id="buttontable" layoutX="535.0" layoutY="583.0" onAction="#ButtonTable" styleClass="anchorpane-btn" stylesheets="@styles.css" text="Add a Medicine" />
+        <TableView fx:id="medicineTable" layoutX="72.0" layoutY="140.0" prefHeight="408.0" prefWidth="1079.0" style="-fx-background-insets: 0;">
+            <columns>
+                <TableColumn fx:id="idColumn" prefWidth="88.0" text="ID">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="id" />
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn fx:id="nameColumn" prefWidth="283.0" text="Medicine name">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="name" />
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn fx:id="descColumn" minWidth="9.99993896484375" prefWidth="324.6666564941406" text="Description" />
+                <TableColumn fx:id="PriceColumn" prefWidth="207.33331298828125" text="Price">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="tel" />
+                    </cellValueFactory>
+                </TableColumn>
+            <TableColumn fx:id="QuantityColumn" prefWidth="174.66670735677076" text="Quantity" />
+                <TableColumn fx:id="actionsColumn" prefWidth="147.99993896484375" text="Actions">
+                    <cellFactory>
+                        <MedicineModifyDeleteCellFactory />
+                    </cellFactory>
+                </TableColumn>
+            </columns>
+        </TableView>
+        <AnchorPane prefHeight="98.0" prefWidth="1200.0" styleClass="anchorpane" stylesheets="@styles.css">
+            <children>
+                <ImageView fitHeight="73.0" fitWidth="184.0" layoutX="508.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@images/logo.png" />
+                    </image>
+                </ImageView>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

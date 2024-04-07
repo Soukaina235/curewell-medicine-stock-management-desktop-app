@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<?import com.curewell.ModifyDeleteCellFactory?>
+<AnchorPane id="AnchorPane" prefHeight="661.0" prefWidth="1200.0" style="-fx-background-color: #ECECE7;"
+            stylesheets="@styles.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.curewell.ListEmployeeController">
+    <children>
+      <JFXButton fx:id="buttontable" layoutX="535.0" layoutY="583.0" onAction="#ButtonTable" styleClass="anchorpane-btn" stylesheets="@styles.css" text="Add an Employee" />
+       <TableView fx:id="employeeTable" layoutX="14.0" layoutY="146.0" prefHeight="408.0" prefWidth="1169.0" style="-fx-background-insets: 0;">
+          <columns>
+            <TableColumn fx:id="idColumn" prefWidth="32.666686058044434" text="ID">
+              <cellValueFactory>
+                  <PropertyValueFactory property="id" />
+              </cellValueFactory>
+          </TableColumn>
+             <TableColumn fx:id="firstNameColumn" prefWidth="108.66665267944336" text="First Name">
+                <cellValueFactory>
+                   <PropertyValueFactory property="firstName" />
+                </cellValueFactory>
+             </TableColumn>
+             <TableColumn fx:id="lastNameColumn" prefWidth="105.33338928222656" text="Last Name">
+                <cellValueFactory>
+                   <PropertyValueFactory property="lastName" />
+                </cellValueFactory>
+             </TableColumn>
+             <TableColumn fx:id="emailColumn" prefWidth="186.6666259765625" text="Email">
+                <cellValueFactory>
+                   <PropertyValueFactory property="email" />
+                </cellValueFactory>
+             </TableColumn>
+             <TableColumn fx:id="phoneColumn" prefWidth="119.33322143554688" text="Phone">
+                <cellValueFactory>
+                   <PropertyValueFactory property="phone" />
+                </cellValueFactory>
+             </TableColumn>
+             <TableColumn fx:id="addressColumn" prefWidth="131.33331298828125" text="Address">
+                <cellValueFactory>
+                   <PropertyValueFactory property="address" />
+                </cellValueFactory>
+             </TableColumn>
+             <TableColumn fx:id="loginColumn" prefWidth="113.33331298828125" text="Login">
+                <cellValueFactory>
+                   <PropertyValueFactory property="login" />
+                </cellValueFactory>
+             </TableColumn>
+             <TableColumn fx:id="passwordColumn" prefWidth="118.0" text="Password">
+                <cellValueFactory>
+                   <PropertyValueFactory property="password" />
+                </cellValueFactory>
+             </TableColumn>
+            <TableColumn fx:id="roleColumn" prefWidth="106.66668701171875" text="ROLE" />
+            <TableColumn prefWidth="147.99993896484375" text="Actions" >
+                <cellFactory>
+                    <ModifyDeleteCellFactory />
+                </cellFactory>
+            </TableColumn>
+          </columns>
+       </TableView>
+      <AnchorPane prefHeight="98.0" prefWidth="1200.0" styleClass="anchorpane" stylesheets="@styles.css">
+         <children>
+            <ImageView fitHeight="73.0" fitWidth="184.0" layoutX="508.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/logo.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+    </children>
+</AnchorPane>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="661.0" prefWidth="1200.0" style="-fx-background-color: #ECECE7;" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.curewell.ListCompanyController">
+    <children>
+        <TableView fx:id="companyTable" layoutX="86.0" layoutY="127.0" prefHeight="408.0" prefWidth="1027.0" style="-fx-background-insets: 0;">
+            <columns>
+                <TableColumn fx:id="idColumn" prefWidth="32.666686058044434" text="ID">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="id" />
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn fx:id="nameColumn" prefWidth="147.33334350585938" text="Company Name">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="name" />
+                    </cellValueFactory>
+                </TableColumn>
+            <TableColumn fx:id="gmailColumn" minWidth="9.99993896484375" prefWidth="171.33331298828125" text="Email" />
+                <TableColumn fx:id="phoneColumn" prefWidth="173.3333740234375" text="Phone">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="tel" />
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn fx:id="addressColumn" prefWidth="235.99993896484375" text="Address">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="address" />
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn fx:id="statusColumn" prefWidth="118.0" text="Status">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="status" />
+                    </cellValueFactory>
+                </TableColumn>
+            </columns>
+        </TableView>
+        <AnchorPane prefHeight="98.0" prefWidth="1200.0" styleClass="anchorpane" stylesheets="@styles.css">
+            <children>
+                <ImageView fitHeight="73.0" fitWidth="184.0" layoutX="508.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@images/logo.png" />
+                    </image>
+                </ImageView>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

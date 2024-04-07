@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="661.0" prefWidth="900.0" style="-fx-background-color: #ECECE7;" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.curewell.CompanyController">
+   <children>
+      <AnchorPane id="AnchorPane" layoutX="14.0" layoutY="7.0" prefHeight="661.0" prefWidth="900.0" style="-fx-background-color: #ECECE7;" stylesheets="@styles.css">
+         <children>
+            <AnchorPane layoutX="-14.0" layoutY="-10.0" prefHeight="767.0" prefWidth="243.0" styleClass="sidebar">
+               <children>
+                  <ImageView fitHeight="64.0" fitWidth="169.0" layoutX="36.0" layoutY="65.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/logo.png" />
+                     </image>
+                  </ImageView>
+                  <JFXButton fx:id="homebutton" layoutX="45.0" layoutY="192.0" onAction="#HomeButton" prefHeight="41.0" prefWidth="115.0" stylesheets="@styles.css" text="Home">
+                     <styleClass>
+                        <String fx:value="sidebar-btn" />
+                        <String fx:value="sidebar-btn-text" />
+                     </styleClass>
+                     <font>
+                        <Font name="Inter Black" size="13.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/home.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="orderbutton" onAction="#OrderButton" layoutX="8.0" layoutY="234.0" prefHeight="27.0" prefWidth="191.0" stylesheets="@styles.css" text="Orders">
+                     <styleClass>
+                        <String fx:value="sidebar-btn-text" />
+                        <String fx:value="sidebar-btn" />
+                     </styleClass>
+                     <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/clipboard.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="stockbutton" onAction="#StockButton" layoutX="4.0" layoutY="268.0" prefHeight="27.0" prefWidth="191.0" stylesheets="@styles.css" text="Stock">
+                     <styleClass>
+                        <String fx:value="sidebar-btn-text" />
+                        <String fx:value="sidebar-btn" />
+                     </styleClass>
+                     <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/ready-stock.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="companybutton" layoutX="22.0" layoutY="300.0" onAction="#CompanyButton" prefHeight="27.0" prefWidth="191.0" stylesheets="@styles.css" text="Companies">
+                     <styleClass>
+                        <String fx:value="sidebar-btn-text" />
+                        <String fx:value="sidebar-btn" />
+                     </styleClass>
+                     <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/company.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="signoutbutton" layoutX="14.0" layoutY="333.0" onAction="#signout" prefHeight="27.0" prefWidth="191.0" stylesheets="@styles.css" text="Sign Out">
+                     <styleClass>
+                        <String fx:value="sidebar-btn-text" />
+                        <String fx:value="sidebar-btn" />
+                     </styleClass>
+                     <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/log-out.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="229.0" layoutY="-24.0" prefHeight="776.0" prefWidth="673.0">
+               <children>
+                  <TextField id="NameField" fx:id="nameField" layoutX="181.0" layoutY="241.0" prefHeight="33.0" prefWidth="311.0" promptText="Company Name" styleClass="text" stylesheets="@styles.css">
+                     <font>
+                        <Font name="Inter Black" size="13.0" />
+                     </font>
+                  </TextField>
+                  <TextField id="EmailField" fx:id="gmailField" layoutX="181.0" layoutY="284.0" prefHeight="33.0" prefWidth="311.0" promptText="Company Email" styleClass="text" stylesheets="@styles.css" />
+                  <TextField id="PhoneField" fx:id="phoneField" layoutX="181.0" layoutY="330.0" prefHeight="33.0" prefWidth="311.0" promptText="Company Phone" styleClass="text" stylesheets="@styles.css" />
+                  <TextField id="AddressField" fx:id="addressField" layoutX="181.0" layoutY="377.0" prefHeight="33.0" prefWidth="311.0" promptText="Company Address" styleClass="text" stylesheets="@styles.css" />
+                  <TextField id="StatusField" fx:id="StatusField" layoutX="181.0" layoutY="425.0" prefHeight="33.0" prefWidth="311.0" promptText="Company Status" styleClass="text" stylesheets="@styles.css" />
+                  <JFXButton id="addCompanyButton" fx:id="addbutton" layoutX="266.0" layoutY="528.0" onAction="#addNewCompanyButtonOnAction" prefHeight="33.0" prefWidth="153.0" styleClass="anchorpane-btn" stylesheets="@styles.css" text="ADD" textFill="#0b1f52" />
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="230.0" layoutY="170.0" prefHeight="33.0" prefWidth="214.0" style="-fx-font-size: 18;" text="ADD A Company" textFill="#0b1f52">
+                     <font>
+                        <Font name="Inter Black" size="38.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

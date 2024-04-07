@@ -1,0 +1,19 @@
+
+k	java:S117+"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÓËŞ«üÿÿÿÿ
+q	java:S116"\Rename this field "UsernameTextField" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÌÎÊú
+@	java:S1063"+Replace this use of System.out by a logger.(Ëº­Î
+H
+java:S11726"2Remove this unused method parameter "currentUser".(œ³¤
+Q	java:S125A"<This block of commented-out lines of code should be removed.(ªı¾°
+c	java:S100V"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(âÉÂ÷
+„
+java:S1130V"nRemove the declaration of thrown exception 'java.sql.SQLException', as it cannot be thrown from method's body.(âÉÂ÷
+B
+java:S1172V",Remove this unused method parameter "event".(âÉÂ÷
+=
+java:S1125W"'Remove the unnecessary boolean literal.(Ú×Šì
+=
+java:S1125W"'Remove the unnecessary boolean literal.(Ú×Šì
+c	java:S100^"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÙĞà
+B
+java:S1172^",Remove this unused method parameter "event".(ÙĞà

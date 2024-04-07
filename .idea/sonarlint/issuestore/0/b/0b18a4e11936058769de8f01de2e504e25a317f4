@@ -1,0 +1,28 @@
+
+h
+java:S1192R"KDefine a constant instead of duplicating this literal "RESP_VENTE" 4 times.(§³èÆ8ÀØ¼à1
+m
+java:S1192U"KDefine a constant instead of duplicating this literal "RESP_ACHAT" 4 times.(ØÃ£‰şÿÿÿÿ8ÁØ¼à1
+h
+java:S1192O"FDefine a constant instead of duplicating this literal "ADMIN" 4 times.(è¨ÂŠıÿÿÿÿ8ÂØ¼à1
+r	java:S117K"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÓËŞ«üÿÿÿÿ8ÃØ¼à1
+s	java:S117¡"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÓËŞ«üÿÿÿÿ8ÄØ¼à1
+s	java:S117Á"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÓËŞ«üÿÿÿÿ8ÅØ¼à1
+s	java:S117ä"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÓËŞ«üÿÿÿÿ8ÅØ¼à1
+_
+java:S16591"BDeclare "valid" and all following declarations on a separate line.(ÅòĞÙ8‹¼à1
+V	java:S125,"<This block of commented-out lines of code should be removed.(Ø½—šÿÿÿÿÿ
+]	java:S125,"<This block of commented-out lines of code should be removed.(Ø½—šÿÿÿÿÿ8º‹¼à1
+]	java:S125,"<This block of commented-out lines of code should be removed.(Ø½—šÿÿÿÿÿ8¿‹¼à1
+]	java:S125,"<This block of commented-out lines of code should be removed.(Ø½—šÿÿÿÿÿ8Â‹¼à1
+i	java:S100H"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(™åĞ8şÙ¼à1
+C	java:S131N""Add a default case to this switch.(¢±ÔÍøÿÿÿÿ8‚Ú¼à1
+j	java:S100i"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(À“€Æ8ÒÚ¼à1
+o	java:S100y"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¤ƒ‰Îıÿÿÿÿ8×Ú¼à1
+k	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(§Ã’Œ8ëÚ¼à1
+D	java:S131¤""Add a default case to this switch.(¢±ÔÍøÿÿÿÿ8ïÚ¼à1
+k	java:S100¾"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(åïÛó8öÚ¼à1
+D	java:S131Ä""Add a default case to this switch.(¢±ÔÍøÿÿÿÿ8¤Û¼à1
+H	java:S106Ğ"+Replace this use of System.out by a logger.(¦ôëí8¦Û¼à1
+p	java:S100á"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(÷‡‚ßùÿÿÿÿ8«Û¼à1
+D	java:S131ç""Add a default case to this switch.(¢±ÔÍøÿÿÿÿ8ÃÛ¼à1

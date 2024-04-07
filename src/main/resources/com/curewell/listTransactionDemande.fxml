@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<?import com.curewell.TransactionValidateCellFactory?>
+<AnchorPane id="AnchorPane" prefHeight="661.0" prefWidth="1200.0" style="-fx-background-color: #ECECE7;" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.curewell.ListTransactionDemandeController">
+    <children>
+        <TableView fx:id="transactionTable" layoutX="72.0" layoutY="140.0" prefHeight="408.0" prefWidth="1079.0" style="-fx-background-insets: 0;">
+            <columns>
+                <TableColumn fx:id="idColumn" prefWidth="32.666686058044434" text="ID">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="id" />
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn fx:id="companyNameColumn" prefWidth="172.00000762939453" text="Company">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="name" />
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn fx:id="employeeNameColumn" prefWidth="168.79998779296875" text="Employee">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="name" />
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn fx:id="creationDateColumn" minWidth="9.99993896484375" prefWidth="155.99996948242188" text="Creation Date" />
+                <TableColumn fx:id="totalColumn" prefWidth="143.199951171875" text="Total">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="tel" />
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn fx:id="statusColumn" prefWidth="104.800048828125" text="Status">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="address" />
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn fx:id="typeColumn" prefWidth="99.20001220703125" text="Type">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="status" />
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn fx:id="actionsColumn" prefWidth="242.66670735677076" text="Actions">
+                    <cellFactory>
+                        <TransactionValidateCellFactory />
+                    </cellFactory>
+                </TableColumn>
+            </columns>
+        </TableView>
+        <AnchorPane prefHeight="98.0" prefWidth="1200.0" styleClass="anchorpane" stylesheets="@styles.css">
+            <children>
+                <ImageView fitHeight="73.0" fitWidth="184.0" layoutX="508.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@images/logo.png" />
+                    </image>
+                </ImageView>
+            </children>
+        </AnchorPane>
+        <JFXButton fx:id="addNewTransactionButton" layoutX="481.0" layoutY="574.0" onAction="#addNewTransactionAction" prefHeight="34.0" prefWidth="237.0" styleClass="anchorpane-btn" stylesheets="@styles.css" text="ADD NEW TRANSACTION" textFill="#0b1f52" />
+    </children>
+</AnchorPane>

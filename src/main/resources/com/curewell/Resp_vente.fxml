@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="661.0" prefWidth="900.0" style="-fx-background-color: #ECECE7;" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.curewell.DashboardController">
+    <children>
+        <AnchorPane layoutX="-14.0" prefHeight="735.0" prefWidth="240.0" styleClass="sidebar">
+            <children>
+            <ImageView fitHeight="64.0" fitWidth="169.0" layoutX="36.0" layoutY="65.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/logo.png" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="homebutton" layoutX="47.0" layoutY="175.0" onAction="#HomeButton" prefHeight="41.0" prefWidth="115.0" stylesheets="@styles.css" text="Home">
+               <styleClass>
+                  <String fx:value="sidebar-btn" />
+                  <String fx:value="sidebar-btn-text" />
+               </styleClass>
+               <font>
+                  <Font name="Inter Black" size="13.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/home.png" />
+                     </image>
+                  </ImageView>
+               </graphic></JFXButton>
+            <JFXButton fx:id="orderbutton" layoutX="10.0" layoutY="214.0" onAction="#OrderButton" prefHeight="27.0" prefWidth="191.0" stylesheets="@styles.css" text="Orders">
+               <styleClass>
+                  <String fx:value="sidebar-btn-text" />
+                  <String fx:value="sidebar-btn" />
+               </styleClass>
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/clipboard.png" />
+                     </image>
+                  </ImageView>
+               </graphic></JFXButton>
+            <JFXButton fx:id="stockbutton" layoutX="6.0" layoutY="246.0" onAction="#StockButton" prefHeight="27.0" prefWidth="191.0" stylesheets="@styles.css" text="Stock">
+               <styleClass>
+                  <String fx:value="sidebar-btn-text" />
+                  <String fx:value="sidebar-btn" />
+               </styleClass>
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/ready-stock.png" />
+                     </image>
+                  </ImageView>
+               </graphic></JFXButton>
+            <JFXButton fx:id="companybutton" layoutX="22.0" layoutY="277.0" onAction="#CompanyButton" prefHeight="27.0" prefWidth="191.0" stylesheets="@styles.css" text="Companies">
+               <styleClass>
+                  <String fx:value="sidebar-btn-text" />
+                  <String fx:value="sidebar-btn" />
+               </styleClass>
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/company.png" />
+                     </image>
+                  </ImageView>
+               </graphic></JFXButton>
+            <JFXButton fx:id="signoutbutton" layoutX="13.0" layoutY="308.0" onAction="#signout" prefHeight="27.0" prefWidth="191.0" stylesheets="@styles.css" text="Sign Out">
+               <styleClass>
+                  <String fx:value="sidebar-btn-text" />
+                  <String fx:value="sidebar-btn" />
+               </styleClass>
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/log-out.png" />
+                     </image>
+                  </ImageView>
+               </graphic></JFXButton>
+            </children>
+        </AnchorPane>
+        <TextField layoutX="415.0" layoutY="22.0" opacity="0.5" prefHeight="30.0" prefWidth="222.0" promptText="Search Drive" style="-fx-background-color: transparent; -fx-border-radius: 50px; -fx-border-color: #AEB2C3;" text="Search...">
+            <font>
+                <Font name="Berlin Sans FB" size="13.0" />
+            </font>
+            <effect>
+                <DropShadow color="#b9b6b6" />
+            </effect>
+        </TextField>
+        <AnchorPane layoutX="284.0" layoutY="93.0" prefHeight="120.0" prefWidth="191.0" style="-fx-border-radius: 0px 50px 0px 0px; -fx-border-color: #F1F2F7;">
+            <effect>
+                <DropShadow color="#9a9696" />
+            </effect>
+            <children>
+                <Label alignment="CENTER" layoutX="59.0" layoutY="86.0" text="Total Orders" textFill="#2262c6">
+                    <font>
+                        <Font name="Inter Black" size="14.0" />
+                    </font>
+                </Label>
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="25.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@images/order-delivery.png" />
+                    </image>
+                </ImageView>
+                <Label fx:id="total" alignment="CENTER" layoutX="104.0" layoutY="50.0" prefHeight="19.0" prefWidth="62.0" textFill="#113974">
+                    <font>
+                        <Font name="Inter Black" size="14.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+        <AnchorPane layoutX="491.0" layoutY="93.0" prefHeight="120.0" prefWidth="191.0" style="-fx-border-radius: 0px 50px 0px 0px; -fx-border-color: #F1F2F7;">
+            <effect>
+                <DropShadow color="#9a9696" />
+            </effect>
+            <children>
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="24.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@images/package.png" />
+                    </image>
+                </ImageView>
+                <Label alignment="CENTER" layoutX="49.0" layoutY="86.0" text="Total Validated" textFill="#2262c6">
+                    <font>
+                        <Font name="Berlin Sans FB" size="14.0" />
+                    </font>
+                </Label>
+                <Label fx:id="valid" alignment="CENTER" layoutX="115.0" layoutY="51.0" prefHeight="19.0" prefWidth="62.0" textFill="#113974">
+                    <font>
+                        <Font name="Inter Black" size="14.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+
+        <AnchorPane layoutX="694.0" layoutY="93.0" prefHeight="120.0" prefWidth="191.0" style="-fx-border-radius: 0px 50px 0px 0px; -fx-border-color: #F1F2F7;">
+            <effect>
+                <DropShadow color="#9a9696" />
+            </effect>
+            <children>
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="23.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@images/box.png" />
+                    </image>
+                </ImageView>
+                <Label alignment="CENTER" layoutX="48.0" layoutY="86.0" text="Pending Orders" textFill="#2262c6">
+                    <font>
+                        <Font name="Berlin Sans FB" size="14.0" />
+                    </font>
+                </Label>
+                <Label fx:id="normal" alignment="CENTER" layoutX="105.0" layoutY="50.0" prefHeight="19.0" prefWidth="62.0" textFill="#113974">
+                    <font>
+                        <Font name="Inter Black" size="14.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+
+        <AnchorPane layoutX="284.0" layoutY="239.0" prefHeight="120.0" prefWidth="191.0" style="-fx-border-radius: 0px 50px 0px 0px; -fx-border-color: #F1F2F7;">
+            <effect>
+                <DropShadow color="#9a9696" />
+            </effect>
+            <children>
+                <Label alignment="CENTER" layoutX="44.0" layoutY="86.0" text="Cancelled Orders" textFill="#2262c6">
+                    <font>
+                        <Font name="Berlin Sans FB" size="14.0" />
+                    </font>
+                </Label>
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="19.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@images/cancel.png" />
+                    </image>
+                </ImageView>
+                <Label fx:id="cancel" alignment="CENTER" layoutX="105.0" layoutY="50.0" prefHeight="19.0" prefWidth="62.0" textFill="#113974">
+                    <font>
+                        <Font name="Inter Black" size="14.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

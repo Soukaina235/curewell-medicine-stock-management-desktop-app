@@ -1,0 +1,68 @@
+.buttonDashboard {
+    -fx-background-color : #0B1F52;
+}
+
+.buttonDashboard:hover {
+    -fx-background-color : #1d3982;
+}
+
+.buttonDashboard:pressed {
+    -fx-background-color : #0B1F52;
+}
+
+.anchorpane{
+    -fx-background-color:#0B1F52 ;
+    -fx-background-radius: 0px 0px  20px 20px;
+}
+.pane{
+    -fx-background-color:#0B1F52;
+
+}
+.text{
+    -fx-font-family: 'Inter', sans-serif;
+    -fx-font-weight: bold;
+    -fx-font-size: 13px;
+}
+.inner_pane{
+    -fx-background-color: #0B1F52;
+    -fx-border-width: 2px 2px 2px 2px;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-border-style: solid;
+    -fx-border-color: #0B1F52;
+}
+.Button{
+    -fx-border-width: 2px 2px 2px 2px;
+    -fx-border-radius: 20px;
+    -fx-border-color: #0B1F52;
+}
+
+.sidebar{
+    -fx-background-color:  #0B1F52;
+    -fx-background-radius: 0px 50px 0px 0px;
+}
+.labbtn{
+    -fx-text-fill: #2262C6;
+    -fx-background-color: #FEFFFD;
+    -fx-background-radius: 50px;
+}
+.sidebar-btn{
+    -fx-background-color: transparent;
+}
+.anchorpane-text{
+    -fx-text-fill:  #2BBFAE;
+    -fx-font-size: 18px;
+}
+
+.anchorpane-btn{
+    -fx-border-color:#2BBFAE ;
+    -fx-border-width: 2px;
+    -fx-border-radius: 15px 15px 15px 15px;
+}
+.sidebar-btn-text{
+    -fx-text-fill:  #ECECE7;
+    -fx-font-size: 18px;
+}
+.sidebar-btn:hover .sidebar-btn-text{
+    -fx-text-fill: #7AA2E7;
+}
