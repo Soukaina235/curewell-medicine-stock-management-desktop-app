@@ -1,7 +1,7 @@
 
+“
+java:S1104"WMake currentUser a static final constant or non-public and provide accessors if needed.(γ°χ¤J$3e76c1a6-ef28-4025-a0f1-1de2ed4f8c9f
 m
-java:S1104"WMake currentUser a static final constant or non-public and provide accessors if needed.(γ°χ¤
-G
-java:S1444"1Make this "public static currentUser" field final(γ°χ¤
-(
-java:S2176"Rename this class.(¦άς–
+java:S1444"1Make this "public static currentUser" field final(γ°χ¤J$919fcdf0-a708-46ff-a70e-af253cf64928
+N
+java:S2176"Rename this class.(¦άς–J$335f37c3-21cc-45eb-9a4f-2ad20ed8dd29

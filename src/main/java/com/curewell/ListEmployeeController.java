@@ -18,12 +18,13 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
 import java.io.IOException;
 import java.util.List;
+import static com.curewell.Application.currentUser;
 
 public class ListEmployeeController {
 
     private EmployeeDaoImpl employeeDao;
 
-    private Employee currentUser;
+
     @FXML
     private JFXButton buttontable;
     @FXML

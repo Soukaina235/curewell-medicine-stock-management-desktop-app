@@ -18,11 +18,12 @@ import javafx.stage.Window;
 import java.io.IOException;
 import java.util.Optional;
 
+import static com.curewell.Application.currentUser;
+
 public class ModifyDeleteController {
 
     private EmployeeDaoImpl employeeDao;
 
-    private Employee currentUser;
     @FXML
     private TextField AddressField;
 
@@ -77,6 +78,7 @@ public class ModifyDeleteController {
     @FXML
     public void initialize() {
         adminDao = new AdminDoaImpl();
+        employeeDao =new EmployeeDaoImpl();
     }
 
     @FXML

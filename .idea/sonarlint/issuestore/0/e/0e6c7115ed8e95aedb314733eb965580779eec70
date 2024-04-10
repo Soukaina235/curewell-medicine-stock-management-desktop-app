@@ -1,0 +1,20 @@
+
+`	java:S112$"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ
+`	java:S112@"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ
+a	java:S112ˆ"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ
+_
+java:S1192"IDefine a constant instead of duplicating this literal "password" 4 times.(ôÅ£
+e
+java:S1192"JDefine a constant instead of duplicating this literal "firstname" 4 times.( ù££øÿÿÿÿ
+c
+java:S1192"HDefine a constant instead of duplicating this literal "address" 4 times.(°‹ó²øÿÿÿÿ
+a
+java:S1192"FDefine a constant instead of duplicating this literal "phone" 4 times.(¢ÉÚ­ùÿÿÿÿ
+a
+java:S1192"FDefine a constant instead of duplicating this literal "login" 4 times.(ŸÑü‘ùÿÿÿÿ
+\
+java:S1192"FDefine a constant instead of duplicating this literal "email" 4 times.(úÁŞ°
+_
+java:S1192"IDefine a constant instead of duplicating this literal "lastname" 4 times.( â¢½
+Q
+java:S2696Q"6Make the enclosing method "static" or remove this set.(ï›¥şÿÿÿÿ
