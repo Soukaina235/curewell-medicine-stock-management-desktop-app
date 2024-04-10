@@ -2,17 +2,14 @@
 
 <?import com.jfoenix.controls.*?>
 <?import java.lang.*?>
+<?import javafx.scene.chart.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.effect.*?>
 <?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<?import javafx.scene.chart.AreaChart?>
-<?import javafx.scene.chart.PieChart?>
-<?import javafx.scene.chart.NumberAxis?>
-<?import javafx.scene.chart.CategoryAxis?>
-<AnchorPane id="AnchorPane" prefHeight="661.0" prefWidth="900.0" style="-fx-background-color: #ECECE7;" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.curewell.DashboardController">
+<AnchorPane id="AnchorPane" prefHeight="735.0" prefWidth="952.0" style="-fx-background-color: #ECECE7;" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.curewell.AdminController">
     <children>
         <AnchorPane layoutX="-14.0" prefHeight="735.0" prefWidth="240.0" styleClass="sidebar">
             <children>
@@ -112,20 +109,12 @@
             </JFXButton>
             </children>
         </AnchorPane>
-        <TextField layoutX="415.0" layoutY="22.0" opacity="0.5" prefHeight="30.0" prefWidth="222.0" promptText="Search Drive" style="-fx-background-color: transparent; -fx-border-radius: 50px; -fx-border-color: #AEB2C3;" text="Search...">
-            <font>
-                <Font name="Berlin Sans FB" size="13.0" />
-            </font>
-            <effect>
-                <DropShadow color="#b9b6b6" />
-            </effect>
-        </TextField>
-        <AnchorPane layoutX="284.0" layoutY="93.0" prefHeight="120.0" prefWidth="191.0" style="-fx-border-radius: 0px 50px 0px 0px; -fx-border-color: #F1F2F7;">
+        <AnchorPane layoutX="274.0" layoutY="14.0" prefHeight="120.0" prefWidth="129.0" style="-fx-border-radius: 0px 50px 0px 0px; -fx-border-color: #F1F2F7;">
             <effect>
                 <DropShadow color="#9a9696" />
             </effect>
             <children>
-                <Label alignment="CENTER" layoutX="59.0" layoutY="86.0" text="Total Orders" textFill="#2262c6">
+                <Label alignment="CENTER" layoutX="20.0" layoutY="90.0" text="Total Orders" textFill="#2262c6">
                     <font>
                         <Font name="Inter Black" size="14.0" />
                     </font>
@@ -135,14 +124,14 @@
                         <Image url="@images/order-delivery.png" />
                     </image>
                 </ImageView>
-                <Label fx:id="total" alignment="CENTER" layoutX="104.0" layoutY="50.0" prefHeight="19.0" prefWidth="62.0" textFill="#113974">
+                <Label fx:id="total" alignment="CENTER" layoutX="67.0" layoutY="35.0" prefHeight="19.0" prefWidth="50.0" textFill="#113974">
                     <font>
                         <Font name="Inter Black" size="14.0" />
                     </font>
                 </Label>
             </children>
         </AnchorPane>
-        <AnchorPane layoutX="491.0" layoutY="93.0" prefHeight="120.0" prefWidth="191.0" style="-fx-border-radius: 0px 50px 0px 0px; -fx-border-color: #F1F2F7;">
+        <AnchorPane layoutX="444.0" layoutY="14.0" prefHeight="120.0" prefWidth="115.0" style="-fx-border-radius: 0px 50px 0px 0px; -fx-border-color: #F1F2F7;">
             <effect>
                 <DropShadow color="#9a9696" />
             </effect>
@@ -152,12 +141,12 @@
                         <Image url="@images/package.png" />
                     </image>
                 </ImageView>
-                <Label alignment="CENTER" layoutX="49.0" layoutY="86.0" text="Total Validated" textFill="#2262c6">
+                <Label alignment="CENTER" layoutX="18.0" layoutY="88.0" text="Total Validated" textFill="#2262c6">
                     <font>
                         <Font name="Berlin Sans FB" size="14.0" />
                     </font>
                 </Label>
-                <Label fx:id="valid" alignment="CENTER" layoutX="115.0" layoutY="51.0" prefHeight="19.0" prefWidth="62.0" textFill="#113974">
+                <Label fx:id="valid" alignment="CENTER" layoutX="65.0" layoutY="35.0" prefHeight="19.0" prefWidth="62.0" textFill="#113974">
                     <font>
                         <Font name="Inter Black" size="14.0" />
                     </font>
@@ -165,7 +154,7 @@
             </children>
         </AnchorPane>
 
-        <AnchorPane layoutX="694.0" layoutY="93.0" prefHeight="120.0" prefWidth="191.0" style="-fx-border-radius: 0px 50px 0px 0px; -fx-border-color: #F1F2F7;">
+        <AnchorPane layoutX="629.0" layoutY="14.0" prefHeight="120.0" prefWidth="129.0" style="-fx-border-radius: 0px 50px 0px 0px; -fx-border-color: #F1F2F7;">
             <effect>
                 <DropShadow color="#9a9696" />
             </effect>
@@ -175,12 +164,12 @@
                         <Image url="@images/box.png" />
                     </image>
                 </ImageView>
-                <Label alignment="CENTER" layoutX="48.0" layoutY="86.0" text="Pending Orders" textFill="#2262c6">
+                <Label alignment="CENTER" layoutX="23.0" layoutY="85.0" text="Pending Orders" textFill="#2262c6">
                     <font>
                         <Font name="Berlin Sans FB" size="14.0" />
                     </font>
                 </Label>
-                <Label fx:id="normal" alignment="CENTER" layoutX="105.0" layoutY="50.0" prefHeight="19.0" prefWidth="62.0" textFill="#113974">
+                <Label fx:id="normal" alignment="CENTER" layoutX="64.0" layoutY="35.0" prefHeight="19.0" prefWidth="62.0" textFill="#113974">
                     <font>
                         <Font name="Inter Black" size="14.0" />
                     </font>
@@ -188,12 +177,12 @@
             </children>
         </AnchorPane>
 
-        <AnchorPane layoutX="284.0" layoutY="239.0" prefHeight="120.0" prefWidth="191.0" style="-fx-border-radius: 0px 50px 0px 0px; -fx-border-color: #F1F2F7;">
+        <AnchorPane layoutX="802.0" layoutY="14.0" prefHeight="120.0" prefWidth="129.0" style="-fx-border-radius: 0px 50px 0px 0px; -fx-border-color: #F1F2F7;">
             <effect>
                 <DropShadow color="#9a9696" />
             </effect>
             <children>
-                <Label alignment="CENTER" layoutX="44.0" layoutY="86.0" text="Cancelled Orders" textFill="#2262c6">
+                <Label alignment="CENTER" layoutX="15.0" layoutY="85.0" text="Cancelled Orders" textFill="#2262c6">
                     <font>
                         <Font name="Berlin Sans FB" size="14.0" />
                     </font>
@@ -203,34 +192,34 @@
                         <Image url="@images/cancel.png" />
                     </image>
                 </ImageView>
-                <Label fx:id="cancel" alignment="CENTER" layoutX="105.0" layoutY="50.0" prefHeight="19.0" prefWidth="62.0" textFill="#113974">
+                <Label fx:id="cancel" alignment="CENTER" layoutX="69.0" layoutY="35.0" prefHeight="19.0" prefWidth="62.0" textFill="#113974">
                     <font>
                         <Font name="Inter Black" size="14.0" />
                     </font>
                 </Label>
             </children>
+        </AnchorPane>
 
 
 <!-- analysis -->
 
-            <Pane fx:id="DashPane1" layoutX="11.0" layoutY="20.0" prefHeight="250" prefWidth="300.0" style="-fx-background-color: #ffffff; -fx-background-radius: 30;">
-                <effect>
-                    <DropShadow />
-                </effect>
-                <children>
-                    <AreaChart fx:id="areaChart" layoutX="-8.0" layoutY="10.0" prefHeight="250" prefWidth="300" title="WEEKLY SALES PROGRESS">
-                        <xAxis>
-                            <CategoryAxis label="MONTHS" side="BOTTOM" />
-                        </xAxis>
-                        <yAxis>
-                            <NumberAxis label="VALUE OF SALES" side="LEFT" />
-                        </yAxis>
-                    </AreaChart>
-                    <PieChart fx:id="PieChart" layoutX="707.0" layoutY="22.0" legendSide="TOP" prefHeight="376.0" prefWidth="474.0" title="MONTLY SALES" />
-                </children>
-            </Pane>
+        <AreaChart fx:id="areaChart" layoutX="248.0" layoutY="186.0" prefHeight="241.0" prefWidth="356.0" styleClass="area-chart" title="MONTHLY PROFITS ">
+            <xAxis>
+                <CategoryAxis label="" prefHeight="31.0" prefWidth="125.0" side="BOTTOM" />
+            </xAxis>
+            <yAxis>
+                <NumberAxis label="VALUE OF SALES" lowerBound="1" side="LEFT" />
+            </yAxis>
+        </AreaChart>
+        <!--        <PieChart fx:id="PieChart" layoutX="220.0" layoutY="187.0" legendSide="TOP" prefHeight="389.0" prefWidth="501.0" title="MONTLY SALES" />-->
 
-
-        </AnchorPane>
+        <BarChart fx:id="barChart" layoutX="610.0" layoutY="186.0" prefHeight="269.0" prefWidth="356.0" styleClass="chart.css" title="Top 5 Companies with Highest Total Transactions">
+            <xAxis>
+                <CategoryAxis label="Comapanies" side="BOTTOM" />
+            </xAxis>
+            <yAxis>
+                <NumberAxis label="Total Transactions" side="LEFT" />
+            </yAxis>
+        </BarChart>
     </children>
 </AnchorPane>

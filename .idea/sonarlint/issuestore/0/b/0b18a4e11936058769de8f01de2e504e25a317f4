@@ -1,28 +1,84 @@
 
-h
-java:S1192R"KDefine a constant instead of duplicating this literal "RESP_VENTE" 4 times.(§³èÆ8ÀØ¼à1
-m
-java:S1192U"KDefine a constant instead of duplicating this literal "RESP_ACHAT" 4 times.(ØÃ£‰şÿÿÿÿ8ÁØ¼à1
-h
-java:S1192O"FDefine a constant instead of duplicating this literal "ADMIN" 4 times.(è¨ÂŠıÿÿÿÿ8ÂØ¼à1
-r	java:S117K"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÓËŞ«üÿÿÿÿ8ÃØ¼à1
-s	java:S117¡"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÓËŞ«üÿÿÿÿ8ÄØ¼à1
-s	java:S117Á"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÓËŞ«üÿÿÿÿ8ÅØ¼à1
-s	java:S117ä"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÓËŞ«üÿÿÿÿ8ÅØ¼à1
-_
-java:S16591"BDeclare "valid" and all following declarations on a separate line.(ÅòĞÙ8‹¼à1
-V	java:S125,"<This block of commented-out lines of code should be removed.(Ø½—šÿÿÿÿÿ
-]	java:S125,"<This block of commented-out lines of code should be removed.(Ø½—šÿÿÿÿÿ8º‹¼à1
-]	java:S125,"<This block of commented-out lines of code should be removed.(Ø½—šÿÿÿÿÿ8¿‹¼à1
-]	java:S125,"<This block of commented-out lines of code should be removed.(Ø½—šÿÿÿÿÿ8Â‹¼à1
-i	java:S100H"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(™åĞ8şÙ¼à1
-C	java:S131N""Add a default case to this switch.(¢±ÔÍøÿÿÿÿ8‚Ú¼à1
-j	java:S100i"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(À“€Æ8ÒÚ¼à1
-o	java:S100y"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¤ƒ‰Îıÿÿÿÿ8×Ú¼à1
-k	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(§Ã’Œ8ëÚ¼à1
-D	java:S131¤""Add a default case to this switch.(¢±ÔÍøÿÿÿÿ8ïÚ¼à1
-k	java:S100¾"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(åïÛó8öÚ¼à1
-D	java:S131Ä""Add a default case to this switch.(¢±ÔÍøÿÿÿÿ8¤Û¼à1
-H	java:S106Ğ"+Replace this use of System.out by a logger.(¦ôëí8¦Û¼à1
-p	java:S100á"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(÷‡‚ßùÿÿÿÿ8«Û¼à1
-D	java:S131ç""Add a default case to this switch.(¢±ÔÍøÿÿÿÿ8ÃÛ¼à1
+x
+java:S3740­"/Provide the parametrized type for this generic.(Ùî‡ÿÿÿÿÿÿ8±Ö® ì1J$8bd58660-e4eb-4707-a2ef-8e5969490c11
+s
+java:S3740²"/Provide the parametrized type for this generic.(óÿšû8²Ö® ì1J$3cec6652-d156-4506-8a55-e72a15141793
+s
+java:S3740ñ"/Provide the parametrized type for this generic.(õë–ó8°ì  ì1J$77660914-66c3-4831-9876-6c3fe00f3a50
+s
+java:S3740ñ"/Provide the parametrized type for this generic.(õë–ó8±ì  ì1J$cee2ecb3-a922-48f7-88c4-95f9ca1a4951
+x
+java:S3740õ"/Provide the parametrized type for this generic.(Ë¿˜Ëúÿÿÿÿ8²ì  ì1J$895115c2-c62d-4574-8aa8-c3a3a4174263
+
+java:S1192Ê"KDefine a constant instead of duplicating this literal "RESP_VENTE" 4 times.(§³èÆ8ğ¿÷ì1J$7c824601-5649-49ee-b076-a156e05e0b67
+”
+java:S1192Í"KDefine a constant instead of duplicating this literal "RESP_ACHAT" 4 times.(ØÃ£‰şÿÿÿÿ8ñ¿÷ì1J$012fef45-1a29-4844-bfa2-c189c566a0a1
+
+java:S1192Ç"FDefine a constant instead of duplicating this literal "ADMIN" 4 times.(è¨ÂŠıÿÿÿÿ8ñ¿÷ì1J$b84faf4d-d049-434d-b4ea-4f8fe5fae249
+™	java:S117Ã"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÓËŞ«üÿÿÿÿ8ó¿÷ì1J$639d3a8d-ed72-42c5-9cce-18e41319fa77
+™	java:S117™"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÓËŞ«üÿÿÿÿ8ô¿÷ì1J$e62cd08f-859d-4f9e-a88d-f8107b86edd9
+™	java:S117¹"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÓËŞ«üÿÿÿÿ8ô¿÷ì1J$959ebf05-85a1-4341-8acb-7a8fa958d82e
+™	java:S117Ü"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÓËŞ«üÿÿÿÿ8ô¿÷ì1J$34e92add-16f4-4cfc-a243-ef7e6791533c
+Ÿ
+java:S1104#"]Make txtTotalCustomers a static final constant or non-public and provide accessors if needed.(ùÛ”	8ö¿÷ì1J$4d68009b-63a1-4b69-ad0b-8d93421159b4
+š
+java:S1104$"WMake TotalOrders a static final constant or non-public and provide accessors if needed.(ÛöÍ¸8÷¿÷ì1J$cba87652-5d28-4166-bdcf-7f1da23bcbed
+™
+java:S1104%"VMake TotalSales a static final constant or non-public and provide accessors if needed.(õæÎë8÷¿÷ì1J$48f30bcf-a2d4-4a62-be57-d128ec664dd6
+–
+java:S1104&"TMake SoldItem a static final constant or non-public and provide accessors if needed.(ÿŸ´F8÷¿÷ì1J$7e22de51-6e4a-42d4-9975-ce17ecec3a48
+˜	java:S116$"VRename this field "TotalOrders" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÛöÍ¸8ˆÂ÷ì1J$3fc197f7-83f5-4157-99a2-27a6f9ec762f
+—	java:S116%"URename this field "TotalSales" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(õæÎë8ˆÂ÷ì1J$ef0e7b54-0a4f-4763-b29c-060661a46e5f
+”	java:S116&"SRename this field "SoldItem" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÿŸ´F8ˆÂ÷ì1J$0912a362-ef52-40d0-b79f-6493b7b60117
+›	java:S116°"SRename this field "PieChart" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‚äë¿ûÿÿÿÿ8µÙ® ì1J$467e9ee6-8a29-48ed-9eda-adb1ed4d6492
+†
+java:S1659º"BDeclare "valid" and all following declarations on a separate line.(ÅòĞÙ8Â÷ì1J$e48d2cf6-69cf-42f6-9912-6bed7720434a
+¶
+java:S1130)"nRemove the declaration of thrown exception 'java.sql.SQLException', as it cannot be thrown from method's body.(ô­Ã’şÿÿÿÿ8•Â÷ì1J$583586a3-4ba6-4fae-bf6f-2f4c16597678
+Á
+java:S1130)"yRemove the declaration of thrown exception 'java.lang.ClassNotFoundException', as it cannot be thrown from method's body.(ô­Ã’şÿÿÿÿ8•Â÷ì1J$81f23384-f0d9-4adc-86cc-66381834d03b
+ƒ	java:S125'"<This block of commented-out lines of code should be removed.(¾í“Îúÿÿÿÿ8“Â÷ì1J$25ab4de4-4ce9-45dd-b34e-ea1098ac7c25
+ƒ	java:S125,"<This block of commented-out lines of code should be removed.(¡ÕÄ÷úÿÿÿÿ8•Â÷ì1J$5a939e4b-3d51-4490-897b-4c9472124ebf
+ƒ	java:S1250"<This block of commented-out lines of code should be removed.(ø¬çÿÿÿÿÿ8˜Â÷ì1J$6cc56548-4db8-4be7-916f-d21dbe4c3b98
+~	java:S125g"<This block of commented-out lines of code should be removed.(ş…â¡8§Â÷ì1J$6e5d6c1e-f2f0-4f5d-9fcd-7b9974545b96
+„	java:S125µ"<This block of commented-out lines of code should be removed.(Ø½—šÿÿÿÿÿ8·Â÷ì1J$037bfd67-2fa7-43fe-ba4f-25d56bde30f9
+„	java:S125µ"<This block of commented-out lines of code should be removed.(Ø½—šÿÿÿÿÿ8·Â÷ì1J$efdd4f37-b84c-48a2-8cb9-65e65cf69326
+„	java:S125µ"<This block of commented-out lines of code should be removed.(Ø½—šÿÿÿÿÿ8¸Â÷ì1J$0eb858a8-2a8b-4b34-a4c0-707b2ab0a437
+„	java:S125µ"<This block of commented-out lines of code should be removed.(Ø½—šÿÿÿÿÿ8¸Â÷ì1J$dcc4400d-4463-4d23-8046-9e19ab066609
+·
+java:S1130¼"nRemove the declaration of thrown exception 'java.sql.SQLException', as it cannot be thrown from method's body.(æ¸®“şÿÿÿÿ8¡ÓŸ ì1J$90832cc5-fb9e-4b62-aa65-c12c034438b7
+Â
+java:S1130¼"yRemove the declaration of thrown exception 'java.lang.ClassNotFoundException', as it cannot be thrown from method's body.(æ¸®“şÿÿÿÿ8£ÓŸ ì1J$7cbc6569-351b-4de0-8ac1-660aef772f79
+·
+java:S1130Í"nRemove the declaration of thrown exception 'java.sql.SQLException', as it cannot be thrown from method's body.(®•ğÈüÿÿÿÿ8Û® ì1J$8e93e252-6b89-40ac-8005-2e3ff90d86ac
+Â
+java:S1130Í"yRemove the declaration of thrown exception 'java.lang.ClassNotFoundException', as it cannot be thrown from method's body.(®•ğÈüÿÿÿÿ8Û® ì1J$d88d7b6d-77a0-4ff1-8e8a-c6b4e8bf2cd1
+„	java:S125“"<This block of commented-out lines of code should be removed.(‹ëˆøÿÿÿÿ8…Œ¢ ì1J$fcfb6fb8-5dba-4fff-9595-a3df37820c63
+„	java:S125Ÿ"<This block of commented-out lines of code should be removed.(ñ¥ùšøÿÿÿÿ8‰Œ¢ ì1J$e3dcfed7-e2dc-413c-b213-71377a11f7f3
+	java:S100À"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(™åĞ8¹Â÷ì1J$0bd07127-ab95-4c89-a864-d6fe58934097
+j	java:S131Æ""Add a default case to this switch.(¢±ÔÍøÿÿÿÿ8½Â÷ì1J$2798633c-7a98-46c8-9407-35b61ef0afbb
+‘	java:S100á"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(À“€Æ8úÂ÷ì1J$93265233-555a-4b27-b569-008cc15e63da
+–	java:S100ñ"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¤ƒ‰Îıÿÿÿÿ8şÂ÷ì1J$8c387f30-a7cf-4fae-89db-c6444f1506b2
+‘	java:S100–"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(§Ã’Œ8‰Ã÷ì1J$b8efc4a9-59d3-41d6-b43a-4f0abde6201d
+j	java:S131œ""Add a default case to this switch.(¢±ÔÍøÿÿÿÿ8ŒÃ÷ì1J$3d92ec5a-8745-4160-9e65-1e994c36f948
+‘	java:S100¶"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(åïÛó8Ã÷ì1J$4c1878d6-8c9e-49a4-b5d0-438286f33cb7
+j	java:S131¼""Add a default case to this switch.(¢±ÔÍøÿÿÿÿ8‘Ã÷ì1J$c8f3cb60-7721-4fb6-9066-4e64b594d80b
+n	java:S106È"+Replace this use of System.out by a logger.(¦ôëí8“Ã÷ì1J$4746e893-121c-4640-9feb-b1365baeb033
+–	java:S100Ù"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(÷‡‚ßùÿÿÿÿ8—Ã÷ì1J$07efd5f6-86dc-4193-ae28-0bacbd42a1fd
+j	java:S131ß""Add a default case to this switch.(¢±ÔÍøÿÿÿÿ8šÃ÷ì1J$66fa382e-c9ed-491d-9afd-2009dcfcfeb0
+‚
+java:S1128"?Remove this unused import 'com.curewell.dao.impl.AdminDoaImpl'.(ê½¡‰8Îİ® ì1J$8fcd9950-04ea-4a5c-a1c6-4fdcfda3cc82
+…
+java:S1128"=Remove this unused import 'com.curewell.util.MonthRetreival'.(¯Ûªœúÿÿÿÿ8Ğİ® ì1J$38e3d588-900c-4f7c-ae24-1ec04b5a0879
+
+java:S1128"9Remove this unused import 'javafx.scene.control.Tooltip'.(ô˜½Æûÿÿÿÿ8Òİ® ì1J$4a681da7-54bc-471d-a22f-84f27d2d74a4
+x
+java:S1128"5Remove this unused import 'javafx.scene.paint.Color'.(Ïî£à8Ôİ® ì1J$6cf3521c-6668-47c1-8687-9a1eadf98449
+{
+java:S1128"3Remove this unused import 'javafx.scene.text.Text'.(˜ÿ‡Üşÿÿÿÿ8×İ® ì1J$726ed523-da7e-4feb-86f4-3b4ff76e9de8
+v
+java:S1128".Remove this unused import 'java.util.HashMap'.(™˜”€ùÿÿÿÿ8Úİ® ì1J$0b778428-2838-4ca8-89f1-4a8a6231eac7
+™
+java:S1128 "QRemove this unused import 'javafx.collections.FXCollections.observableArrayList'.(§˜Ëïşÿÿÿÿ8Ûİ® ì1J$a980c73c-4c33-482e-8ae1-baa40aec1347
+O
+java:S1144)"-Remove this unused private "initInfo" method.(ô­Ã’şÿÿÿÿ8ÌÖ¼ ì1

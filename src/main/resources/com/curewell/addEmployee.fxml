@@ -18,7 +18,7 @@
                         <Image url="@images/logo.png" />
                     </image>
                 </ImageView>
-                <JFXButton fx:id="homebutton" layoutX="45.0" layoutY="192.0" onAction="#HomeButton" prefHeight="41.0" prefWidth="115.0" stylesheets="@styles.css" text="Home">
+                <JFXButton fx:id="HomeButton" layoutX="45.0" layoutY="192.0" onAction="#HomeButton" prefHeight="41.0" prefWidth="115.0" stylesheets="@styles.css" text="Home">
                     <styleClass>
                         <String fx:value="sidebar-btn" />
                         <String fx:value="sidebar-btn-text" />
@@ -33,7 +33,7 @@
                             </image>
                         </ImageView>
                     </graphic></JFXButton>
-                <JFXButton fx:id="orderbutton" layoutX="8.0" layoutY="234.0" prefHeight="27.0" prefWidth="191.0" stylesheets="@styles.css" text="Orders">
+                <JFXButton fx:id="OrderButton" layoutX="8.0" layoutY="234.0" prefHeight="27.0" prefWidth="191.0" stylesheets="@styles.css" text="Orders">
                     <styleClass>
                         <String fx:value="sidebar-btn-text" />
                         <String fx:value="sidebar-btn" />
@@ -45,7 +45,7 @@
                             </image>
                         </ImageView>
                     </graphic></JFXButton>
-                <JFXButton fx:id="stockbutton" layoutX="6.0" layoutY="268.0" prefHeight="27.0" prefWidth="191.0" stylesheets="@styles.css" text="Stock">
+                <JFXButton fx:id="StockButton" layoutX="6.0" layoutY="268.0" prefHeight="27.0" prefWidth="191.0" stylesheets="@styles.css" text="Stock">
                     <styleClass>
                         <String fx:value="sidebar-btn-text" />
                         <String fx:value="sidebar-btn" />
@@ -57,7 +57,7 @@
                             </image>
                         </ImageView>
                     </graphic></JFXButton>
-                <JFXButton fx:id="companybutton" layoutX="22.0" layoutY="300.0" onAction="#CompanyButton" prefHeight="27.0" prefWidth="191.0" stylesheets="@styles.css" text="Companies">
+                <JFXButton fx:id="CompanyButton" layoutX="22.0" layoutY="300.0" onAction="#CompanyButton" prefHeight="27.0" prefWidth="191.0" stylesheets="@styles.css" text="Companies">
                     <styleClass>
                         <String fx:value="sidebar-btn-text" />
                         <String fx:value="sidebar-btn" />
@@ -69,7 +69,7 @@
                             </image>
                         </ImageView>
                     </graphic></JFXButton>
-                <JFXButton fx:id="employeebutton" layoutX="19.0" layoutY="331.0" onAction="#EmployeeButton" prefHeight="27.0" prefWidth="191.0" stylesheets="@styles.css" text="Employees">
+                <JFXButton fx:id="EmployeeButton" layoutX="19.0" layoutY="331.0" onAction="#EmployeeButton" prefHeight="27.0" prefWidth="191.0" stylesheets="@styles.css" text="Employees">
                     <styleClass>
                         <String fx:value="sidebar-btn-text" />
                         <String fx:value="sidebar-btn" />
@@ -81,7 +81,7 @@
                             </image>
                         </ImageView>
                     </graphic></JFXButton>
-                <JFXButton fx:id="settingbutton" layoutX="12.0" layoutY="360.0" onAction="#SettingButton" prefHeight="27.0" prefWidth="191.0" stylesheets="@styles.css" text="Settings">
+                <JFXButton fx:id="SettingButton" layoutX="12.0" layoutY="360.0" onAction="#SettingButton" prefHeight="27.0" prefWidth="191.0" stylesheets="@styles.css" text="Settings">
                     <styleClass>
                         <String fx:value="sidebar-btn-text" />
                         <String fx:value="sidebar-btn" />

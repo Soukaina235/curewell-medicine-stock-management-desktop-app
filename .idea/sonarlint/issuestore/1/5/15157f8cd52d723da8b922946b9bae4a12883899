@@ -1,41 +1,50 @@
 
-a	java:S112™"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ
-a	java:S112Ì"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ
-a	java:S112ì"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ
-a	java:S112²"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ
-h	java:S112Æ"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8íÀ·à1
-h	java:S112Ú"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8ñÀ·à1
-h	java:S112ï"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8òÀ·à1
-h	java:S112ƒ"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8óÀ·à1
-c
-java:S1192"GDefine a constant instead of duplicating this literal "status" 3 times.(ª¿Úøÿÿÿÿ
-l	java:S117½"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ëĞÁôşÿÿÿÿ
-k
-java:S2095å"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(úí¡¾øÿÿÿÿ
+	java:S112,"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8«©ì1J$b2550581-8e31-4c47-869e-25ee97ce0d7b
+	java:S112Ã"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8«©ì1J$b88ef712-40b8-4281-bfb3-052b2d669c05
+	java:S112ö"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8«©ì1J$929d086d-6f35-420b-9639-73772875a269
+	java:S112–"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8«©ì1J$c51d1438-0928-4708-896e-aaddaa85819b
+	java:S112Ü"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8«©ì1J$1f531800-01b8-4aad-affb-831a01e5c0fa
+	java:S112ğ"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8«©ì1J$9d1b0524-9935-4176-b061-a68e2e5e76ea
+	java:S112„"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8«©ì1J$d359d58c-ad93-46bb-b22d-cb5746d70c42
+	java:S112™"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8«©ì1J$e0e76ec1-71c2-463a-a0d8-4b745d05d953
+	java:S112­"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8«©ì1J$369172a5-f28c-461b-9793-4807fd245013
+	java:S112É"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8«©ì1J$ea1e1fef-215a-4cd8-89a3-2989b10824e1
+	java:S112ç"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8†ü¾ì1J$1527c27b-8c5f-49f0-b417-04f3f9c779c0
+
+java:S1192·"GDefine a constant instead of duplicating this literal "status" 3 times.(ª¿Úøÿÿÿÿ8±Ê•›ì1J$23d1c145-03f9-44aa-b965-cba305e069c0
+Œ
+java:S1192¹"HDefine a constant instead of duplicating this literal "company" 3 times.(Œ¥í8”«©ì1J$c7e53ac5-cc29-4e74-a3a4-8cbc378c08b6
+™	java:S117ç"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ëĞÁôşÿÿÿÿ8•«©ì1J$20b9fc6f-7d7f-4752-a086-6e10b3f69ec5
+˜
+java:S2095"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(úí¡¾øÿÿÿÿ8í«©ì1J$53a6e75c-3df9-4961-9d34-39857ef447e7
+˜
+java:S2095ü"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(úí¡¾øÿÿÿÿ8í«©ì1J$ec8135cf-a219-46f2-8e24-5ef7f6e1596a
+˜
+java:S2095Ú"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(÷Ş¶âúÿÿÿÿ8ù©ì1J$e5a546d7-3b81-4a74-9720-223ca117251d
+˜
+java:S2095¡"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(º’Èæüÿÿÿÿ8í«©ì1J$861a0e01-9a70-4349-9417-9b4cef6c0819
+˜
+java:S2095»"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(º’Èæüÿÿÿÿ8ì«©ì1J$1e5c382a-deaf-4db1-9842-5398f9265b29
+˜
+java:S2095è"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(úí¡¾øÿÿÿÿ8î«©ì1J$9a44e9d3-328e-481e-95c9-77c4c60405a1
+—
+java:S2095a"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(…ô«²ûÿÿÿÿ8í«©ì1J$353d58d2-1e60-4148-869a-9b57e125f868
+˜
+java:S2095¥"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(úí¡¾øÿÿÿÿ8í«©ì1J$666de7f4-e8a1-4a50-a315-9afce0a8d9f2
 r
-java:S2095û"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(úí¡¾øÿÿÿÿ8ÌÆ·à1
-k
-java:S2095÷"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(º’Èæüÿÿÿÿ
-r
-java:S2095Ò"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(úí¡¾øÿÿÿÿ8ÎÆ·à1
-k
-java:S2095‘"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(º’Èæüÿÿÿÿ
-r
-java:S2095¾"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(úí¡¾øÿÿÿÿ8ÕÆ·à1
-r
-java:S2095©"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(úí¡¾øÿÿÿÿ8ÖÆ·à1
-j
-java:S20957"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(…ô«²ûÿÿÿÿ
-e
-java:S2095Y"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(¹ï‹¦
-R	java:S125ˆ"<This block of commented-out lines of code should be removed.(–¿Ñ”
-n
-java:S6204Ÿ"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(Ó˜Íˆûÿÿÿÿ
-K
-java:S1611Ÿ"/Remove the parentheses around the "t" parameter(Ó˜Íˆûÿÿÿÿ
-n
-java:S6204¤"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(§åãÎúÿÿÿÿ
-K
-java:S1611¤"/Remove the parentheses around the "t" parameter(§åãÎúÿÿÿÿ
-W
-java:S1144¨";Remove this unused private "getMedicineQuantityMap" method.(ğÆç”ÿÿÿÿÿ
+java:S2095¾"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(÷Ş¶âúÿÿÿÿ8ÚáÃì1
+˜
+java:S2095Ó"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(úí¡¾øÿÿÿÿ8í«©ì1J$5cbfecbe-df3d-4114-bd0d-196d97b5a714
+“
+java:S2095ƒ"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(¹ï‹¦8î«©ì1J$9082f670-9107-456f-8298-03f0917477f0
+	java:S125²"<This block of commented-out lines of code should be removed.(–¿Ñ”8¬©ì1J$95d36715-bf34-4cec-ac13-e73cec3c8026
+›
+java:S6204É"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(Ó˜Íˆûÿÿÿÿ8¬©ì1J$85618eae-c7e5-48ff-bc66-8c43c69e24f5
+x
+java:S1611É"/Remove the parentheses around the "t" parameter(Ó˜Íˆûÿÿÿÿ8’¬©ì1J$b4e2d8ae-65f6-431c-bf27-9fa2702760d3
+›
+java:S6204Î"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(§åãÎúÿÿÿÿ8”¬©ì1J$de6eaa26-82b6-421a-9a46-3d49e144592c
+x
+java:S1611Î"/Remove the parentheses around the "t" parameter(§åãÎúÿÿÿÿ8•¬©ì1J$c363299b-afaa-43ce-b00a-6f8132283079
+„
+java:S1144Ò";Remove this unused private "getMedicineQuantityMap" method.(ğÆç”ÿÿÿÿÿ8Å¬©ì1J$c5425d22-2b26-47bb-af6c-377f12bf968c

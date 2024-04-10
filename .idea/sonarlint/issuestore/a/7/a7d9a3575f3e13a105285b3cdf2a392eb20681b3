@@ -1,17 +1,17 @@
 
-k
-java:S1104"PMake conn a static final constant or non-public and provide accessors if needed.(€ÙÄ§þÿÿÿÿ
-p
-java:S1104"UMake statement a static final constant or non-public and provide accessors if needed.(º‰ÊÚÿÿÿÿÿ
-<
-java:S1170	"!Make this final field static too.(ª€¤þÿÿÿÿ
-<
+‘
+java:S1104"PMake conn a static final constant or non-public and provide accessors if needed.(€ÙÄ§þÿÿÿÿJ$60c693af-1911-4cc2-94e7-1816c23ab32e
+–
+java:S1104"UMake statement a static final constant or non-public and provide accessors if needed.(º‰ÊÚÿÿÿÿÿJ$fdbbc9d4-5aef-4f0c-9cf3-802a25787930
+b
+java:S1170	"!Make this final field static too.(ª€¤þÿÿÿÿJ$87ff90f8-33ba-4bf2-96bf-84143f7f13ef
+b
 java:S1170
-"!Make this final field static too.(É—¼êûÿÿÿÿ
-7
-java:S1170"!Make this final field static too.(±©‰‚
-<
-java:S1170"!Make this final field static too.(Œ”¹±þÿÿÿÿ
-V	java:S125"<This block of commented-out lines of code should be removed.(ñ¥ùšøÿÿÿÿ
-D
-java:S2115")Add password protection to this database.(Ì³Ö±ýÿÿÿÿ
+"!Make this final field static too.(É—¼êûÿÿÿÿJ$f792f9b1-c46c-4018-99c5-63c94a2733e7
+]
+java:S1170"!Make this final field static too.(±©‰‚J$05d4790a-9ff3-4de5-a82e-0156fd024d9f
+]
+java:S1170"!Make this final field static too.(ÚôªœJ$2eb2618b-3e48-48b1-99ce-961925caa55c
+|	java:S125"<This block of commented-out lines of code should be removed.(ñ¥ùšøÿÿÿÿJ$3c67145d-930e-4673-9008-2db40ca416fb
+j
+java:S2115")Add password protection to this database.(Ì³Ö±ýÿÿÿÿJ$87bb579d-4cb1-4647-a189-e5f9f33c3845

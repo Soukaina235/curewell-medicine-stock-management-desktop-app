@@ -1,10 +1,8 @@
 package com.curewell.dao.impl;
 
 import com.curewell.Application;
-import com.curewell.model.Medicine;
-import com.curewell.model.StatusTransaction;
-import com.curewell.model.Transaction;
-import com.curewell.model.TypeTransaction;
+import com.curewell.dao.CompanyDao;
+import com.curewell.model.*;
 import com.curewell.dao.TransactionDao;
 import com.curewell.sql.ConnectDB;
 import java.sql.PreparedStatement;
@@ -12,6 +10,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.time.LocalDateTime;
+import java.time.Month;
 import java.time.format.DateTimeFormatter;
 import java.util.*;
 import java.util.stream.Collectors;
@@ -431,4 +430,65 @@ public class TransactionDaoImpl implements TransactionDao {
         }
         return 0;
     }
+
+    public Map<String, Integer> getValidatedTransactionsByMonth() {
+        ConnectDB connectDB = null;
+
+        Map<String, Integer> validatedTransactionsByMonth = new HashMap<>();
+
+        String sql = "SELECT MONTH(dateValidation) as month, COUNT(*) as count " +
+                "FROM Transaction " +
+                "WHERE status = 'Validated' " +
+                "GROUP BY MONTH(dateValidation)";
+
+        try {
+            connectDB = new ConnectDB();
+            PreparedStatement pstmt = connectDB.conn.prepareStatement(sql);
+            ResultSet rs = pstmt.executeQuery();
+
+            while (rs.next()) {
+                String month = Month.of(rs.getInt("month")).name();
+                int count = rs.getInt("count");
+                validatedTransactionsByMonth.put(month, count);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } catch (ClassNotFoundException e) {
+            throw new RuntimeException(e);
+        }
+
+        return validatedTransactionsByMonth;
+    }
+
+    public Map<String, Integer> getTotalTransactionsByClient() {
+        ConnectDB connectDB = null;
+        Map<String, Integer> transactionsByClient = new HashMap<>();
+        CompanyDao companyDao = new CompanyDaoImpl(); // Assurez-vous d'avoir une instance de CompanyDao
+
+        String sql = "SELECT company, COUNT(*) as count " +
+                "FROM Transaction " +
+                "GROUP BY company";
+
+        try {
+            connectDB = new ConnectDB();
+            PreparedStatement pstmt = connectDB.conn.prepareStatement(sql);
+            ResultSet rs = pstmt.executeQuery();
+
+            while (rs.next()) {
+                int companyId = rs.getInt("company");
+                Company company = companyDao.findCompanyById(companyId); // Utilisez findCompanyById pour obtenir l'objet Company
+                String client = company.getName(); // Obtenez le nom de l'entreprise
+                int count = rs.getInt("count");
+                transactionsByClient.put(client, count);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }catch (ClassNotFoundException e) {
+            throw new RuntimeException(e);
+        }
+
+        return transactionsByClient;
+    }
+
+
 }

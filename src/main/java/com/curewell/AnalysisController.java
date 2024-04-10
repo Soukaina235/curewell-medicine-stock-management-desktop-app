@@ -6,6 +6,7 @@ import com.curewell.dao.impl.TransactionDaoImpl;
 import com.curewell.model.Employee;
 import com.curewell.model.Transaction;
 import javafx.fxml.FXML;
+import javafx.scene.chart.BarChart;
 import javafx.scene.chart.LineChart;
 import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
@@ -63,6 +64,34 @@ public class AnalysisController {
             profitSeries.getData().add(new XYChart.Data<>(i + 1, demandeTransactions.get(i).getTotal()));
         }
         profitLineChart.getData().add(profitSeries);
+        displayTopNEmployeesWithHighestTotalTransactions(5);
+
+    }
+
+    @FXML
+    BarChart<String, Number> barChart;
+
+    public void displayTopNEmployeesWithHighestTotalTransactions(int n) {
+        // Clear the previous data
+        barChart.getData().clear();
+
+        // Set the title for the bar chart
+        barChart.setTitle("Top " + n + " Employees with Highest Total Transactions");
+
+        // Create a list to store the top n employees
+        List<Employee> topNEmployees = getTopNEmployeesWithHighestTotalTransactions(n);
+
+        // Create a series to store the data
+        XYChart.Series<String, Number> series = new XYChart.Series<>();
+
+        // Loop through the top n employees and add their data to the series
+        for (Employee employee : topNEmployees) {
+            double totalTransactions = employee.getalltransactions2();
+            series.getData().add(new XYChart.Data<>(employee.getLastName(), totalTransactions));
+        }
+
+        // Add the series to the bar chart
+        barChart.getData().add(series);
     }
 
     public List<Employee> getTopNEmployeesWithHighestTotalTransactions(int n) {

@@ -1,0 +1,33 @@
+
+‡
+java:S1192_"KDefine a constant instead of duplicating this literal "RESP_VENTE" 4 times.(§³èÆJ$1c49cf04-37f4-4c95-9930-2550145935c9
+Œ
+java:S1192b"KDefine a constant instead of duplicating this literal "RESP_ACHAT" 4 times.(ØÃ£‰şÿÿÿÿJ$9a3a19c9-5fbf-4a53-b4c4-e55282600470
+‡
+java:S1192\"FDefine a constant instead of duplicating this literal "ADMIN" 4 times.(è¨ÂŠıÿÿÿÿJ$2bd3cb11-b1aa-46ac-8b36-f352f6cecfef
+‘	java:S117X"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÓËŞ«üÿÿÿÿJ$72dbb7ad-53a2-4d53-b07a-76f679e9192d
+’	java:S117¯"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÓËŞ«üÿÿÿÿJ$c67e9478-7cd6-4532-919e-a6e436ce6bf3
+’	java:S117Ï"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÓËŞ«üÿÿÿÿJ$ffa85cf6-bf32-4315-83dd-4f6dfaff57e8
+’	java:S117ò"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÓËŞ«üÿÿÿÿJ$65ece265-0f92-448e-9d87-45d5244e993f
+‘	java:S116"WRename this field "AddressField" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ôú®bJ$8a6a104a-969f-4a3a-b53f-3e2f09077135
+•	java:S116"URename this field "EmailField" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¤«„ùÿÿÿÿJ$b586f3e2-9e00-4b17-a14d-0afa35ed3eb9
+•	java:S116""URename this field "FnameField" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(åûÕúÿÿÿÿJ$c113c269-0b3f-4361-b103-b50aaa0ee271
+•	java:S116%"URename this field "LnameField" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(£’³ĞûÿÿÿÿJ$109dca9a-de44-41f8-ba72-e3419c15cb26
+	java:S116("URename this field "LoginField" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(›‚œæJ$293e1dda-6180-44fe-af0e-1341b544b8cf
+“	java:S116+"XRename this field "PasswordField" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(€«³èJ$3549ee39-9fa0-4d24-8f74-6977d713dc98
+•	java:S116."URename this field "PhoneField" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(×—ø²ùÿÿÿÿJ$f0f2a5f7-d86c-4a0a-8181-c5d81f3d42e1
+”	java:S1161"TRename this field "RoleField" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(È¯åşÿÿÿÿJ$13a4e98a-6a91-4a7d-a8e5-e0af75732d42
+ˆ	java:S100U"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(™åĞJ$e8eeda26-a4f7-473c-b2f0-b65210b790ad
+b	java:S131[""Add a default case to this switch.(¢±ÔÍøÿÿÿÿJ$813e840a-1437-43f6-87db-ffbf5c786e07
+‰	java:S100v"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(À“€ÆJ$c1851e61-e654-4804-a142-5490053efd31
+	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¤ƒ‰ÎıÿÿÿÿJ$48c32e42-487a-4b57-ac01-1699a53958d2
+Š	java:S100¬"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(§Ã’ŒJ$7a0d5b4c-4023-4223-b8a5-21ba03bed957
+c	java:S131²""Add a default case to this switch.(¢±ÔÍøÿÿÿÿJ$831c2467-8a9a-4418-a0ac-9510f5d2620d
+Š	java:S100Ì"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(åïÛóJ$a90264e6-640e-483b-ab41-b870359c21b3
+c	java:S131Ò""Add a default case to this switch.(¢±ÔÍøÿÿÿÿJ$95a9eeba-e1c3-452b-9145-111b795034fb
+g	java:S106Ş"+Replace this use of System.out by a logger.(¦ôëíJ$ef5f71af-16c6-427a-a22e-bb17ff0ba657
+	java:S100ï"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(÷‡‚ßùÿÿÿÿJ$57a5ee02-3572-40eb-8170-5b3d17a9c5cd
+c	java:S131õ""Add a default case to this switch.(¢±ÔÍøÿÿÿÿJ$a16edb43-7740-4d92-bccd-dada294f44ad
+Š	java:S100›"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ñ¹ŞŸJ$419a81a9-8be4-4f22-8e15-e6c2e6845d57
+o
+java:S1172›"2Remove this unused method parameter "actionEvent".(ñ¹ŞŸJ$589d60ef-aff8-4ecf-9fd8-becc7b8368d6

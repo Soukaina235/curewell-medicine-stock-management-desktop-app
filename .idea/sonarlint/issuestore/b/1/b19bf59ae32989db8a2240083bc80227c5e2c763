@@ -1,0 +1,9 @@
+
+ª
+java:S1488o"gImmediately return this expression instead of assigning it to the temporary variable "sortedEmployees".(’±Ğß8™ÈĞ˜ì1J$e7b63cdf-2253-441c-9763-8e6cc0c323b4
+•
+java:S62044"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ª™¨¹8ÉĞ˜ì1J$69e1a2e1-0f55-49c5-9901-86a4cd1c28c0
+•
+java:S6204s"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ª™¨¹8ÉĞ˜ì1J$ddf023c5-3246-4976-8f51-60fe31629b59
+u
+java:S1068"2Remove this unused "transactionDao" private field.(è£ÆÁ8¢ÉĞ˜ì1J$0c7ec381-2857-4fdd-812b-c1c1495157e2

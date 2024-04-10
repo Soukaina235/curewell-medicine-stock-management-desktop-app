@@ -5,6 +5,7 @@ import com.curewell.dao.impl.EmployeeDaoImpl;
 import com.curewell.dao.impl.TransactionDaoImpl;
 import com.curewell.model.Employee;
 import com.jfoenix.controls.JFXButton;
+import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -12,25 +13,25 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.chart.AreaChart;
-import javafx.scene.chart.PieChart;
-import javafx.scene.chart.XYChart;
+import javafx.scene.chart.*;
 import javafx.scene.control.*;
+import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
 import java.io.IOException;
 import java.sql.SQLException;
+import java.time.Month;
+import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Optional;
+import java.util.stream.Collectors;
 
+import static com.curewell.Application.currentUser;
 import static javafx.collections.FXCollections.observableArrayList;
 
 public class AdminController {
 
-
-
     private EmployeeDaoImpl employeeDao;
 
-    private Employee currentUser;
     @FXML
     private TextField AddressField;
 
@@ -97,37 +98,140 @@ public class AdminController {
     private JFXButton cancelbtn;
     @FXML
     private Label MessageLabel;
+    @FXML
+    public AreaChart areaChart;
+
+    @FXML
+    private PieChart PieChart;
+    @FXML
+    private BarChart barChart;
 
     @FXML
     private Label total,valid,cancel,normal;
+
+    public void loadPieChart() throws SQLException, ClassNotFoundException {
+        TransactionDaoImpl transactionDao = new TransactionDaoImpl();
+        Map<String, Integer> validatedTransactionsByMonth = transactionDao.getValidatedTransactionsByMonth();
+
+        ObservableList<PieChart.Data> pieChartData = FXCollections.observableArrayList();
+
+        for (Month month : Month.values()) {
+            String monthName = month.toString();
+            int count = validatedTransactionsByMonth.getOrDefault(monthName, 0);
+
+            // Add the data to the pie chart with the month name and count
+            pieChartData.add(new PieChart.Data(monthName + " (" + count + ")", count));
+        }
+
+        PieChart.setData(pieChartData);
+    }
+
+    public void loadBarChart() throws SQLException, ClassNotFoundException {
+        TransactionDaoImpl transactionDao = new TransactionDaoImpl();
+
+        // Fetch data from database
+        Map<String, Integer> transactionsByClient = transactionDao.getTotalTransactionsByClient();
+
+        // Sort the map in descending order and limit to top 5
+        Map<String, Integer> top5Clients = transactionsByClient.entrySet().stream()
+                .sorted(Map.Entry.<String, Integer>comparingByValue().reversed())
+                .limit(5)
+                .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue, (e1, e2) -> e1, LinkedHashMap::new));
+
+        XYChart.Series<String, Number> series = new XYChart.Series<>();
+        if (barChart != null) {
+
+            barChart.getStylesheets().add(getClass().getResource("chart.css").toExternalForm());
+
+            int seriesCounter = 0;
+            // Iterate over top 5 clients
+            for (Map.Entry<String, Integer> entry : top5Clients.entrySet()) {
+                XYChart.Data<String, Number> data = new XYChart.Data<>(String.valueOf(seriesCounter + 1), entry.getValue());
+                StackPane bar = new StackPane();
+                Label label = new Label(entry.getKey());
+                bar.getChildren().add(label);
+                bar.getStyleClass().add("default-color" + seriesCounter); // Apply CSS class to StackPane
+                data.setNode(bar);
+                series.getData().add(data);
+
+                seriesCounter++;
+            }
+
+            barChart.getData().add(series);
+        }
+    }
+    public void loadValueOfMonthlySales() {
+        Map<Integer, Double> monthlySales = new TransactionDaoImpl().getMonthlySales();
+        XYChart.Series series = new XYChart.Series();
+
+        for (int i = 1; i <= 12; i++) {
+            double sales = monthlySales.containsKey(i) ? monthlySales.get(i) : 0;
+            series.getData().add(new XYChart.Data(Month.of(i).name(), sales));
+        }
+        areaChart.getStylesheets().add(getClass().getResource("chart.css").toExternalForm());
+
+        series.setName("2024");
+        areaChart.getData().add(series);
+        CategoryAxis xAxis = (CategoryAxis) areaChart.getXAxis();
+        xAxis.setGapStartAndEnd(true);
+        xAxis.setStartMargin(0.5);
+        xAxis.setEndMargin(0.5);
+    }
+
     @FXML
     public void initialize() {
         adminDao = new AdminDoaImpl();
+        this.employeeDao = new EmployeeDaoImpl();
         TransactionDaoImpl transactiondao = new TransactionDaoImpl();
-        int rs1 = transactiondao.getCountTotal();
-        int rs2 = transactiondao.getCountValidated();
-        int rs3 = transactiondao.getCountCancelled();
-        int rs4 = transactiondao.getCountNormal();
-        if(rs1>=0){
-            total.setText(Integer.toString(rs1));
+        try {
+            int rs1 = transactiondao.getCountTotal();
+            if (total != null && rs1 >= 0) {
+                total.setText(Integer.toString(rs1));
+            }
+
+            int rs2 = transactiondao.getCountValidated();
+            if (valid != null && rs2 >= 0) {
+                valid.setText(Integer.toString(rs2));
+            }
+
+            int rs3 = transactiondao.getCountCancelled();
+            if (cancel != null && rs3 >= 0) {
+                cancel.setText(Integer.toString(rs3));
+            }
+
+            int rs4 = transactiondao.getCountNormal();
+            if (normal != null && rs4 >= 0) {
+                normal.setText(Integer.toString(rs4));
+            }
+
+        } catch (Exception e) {
+            e.printStackTrace();
         }
-        if(rs2>=0){
-            valid.setText(Integer.toString(rs2));
+
+        try {
+
+
+                loadBarChart();
+
+        } catch (SQLException | ClassNotFoundException throwable) {
+            throwable.printStackTrace();
         }
-        if(rs3>=0){
-            cancel.setText(Integer.toString(rs3));
+        if(areaChart != null) {
+
+            loadValueOfMonthlySales();
         }
-        if(rs4>=0){
-            normal.setText(Integer.toString(rs4));
+        if(barChart != null) {
+            barChart.getStylesheets().add(getClass().getResource("chart.css").toExternalForm());
         }
     }
+
     public void setCurrentUser(Employee employee) {
-        this.currentUser = employee;
+        currentUser = employee;
     }
     @FXML
     public void HomeButton(ActionEvent event) {
 
-        if (this.currentUser != null) {
+        if (currentUser != null) {
             String login = currentUser.getLogin();
             String password = currentUser.getPassword();
             String ROLE = employeeDao.getRoleByLoginAndPassword(login, password);
@@ -326,16 +430,17 @@ public class AdminController {
         String password = currentUser.getPassword();
         String ROLE = employeeDao.getRoleByLoginAndPassword(login, password);
 
+        System.out.println(ROLE);
         String fxmlPath = null;
         switch (ROLE) {
             case "ADMIN":
-                fxmlPath = "admin.fxml";
+                fxmlPath = "listMedicine.fxml";
                 break;
             case "RESP_VENTE":
-                fxmlPath = "Resp_vente.fxml";
+                fxmlPath = "listMedicine.fxml";
                 break;
             case "RESP_ACHAT":
-                fxmlPath = "Resp_achat.fxml";
+                fxmlPath = "listMedicineAchat.fxml";
                 break;
         }
         try {

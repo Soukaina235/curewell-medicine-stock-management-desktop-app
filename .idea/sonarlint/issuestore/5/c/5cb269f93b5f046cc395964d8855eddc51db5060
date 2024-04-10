@@ -1,0 +1,14 @@
+
+
+java:S4165%"fRemove this useless assignment; "discount" already holds the assigned value along all execution paths.(Ù——èùÿÿÿÿ
+g
+java:S1206ð"PThis class overrides "equals()" and should therefore also override "hashCode()".(ÜÑã
+W	java:S107/"BConstructor has 11 parameters, which is greater than 7 authorized.(¡ýãö
+W	java:S107>"BConstructor has 10 parameters, which is greater than 7 authorized.(Õ®Ü¸
+[	java:S107K"AConstructor has 9 parameters, which is greater than 7 authorized.(ç£‹…ùÿÿÿÿ
+[	java:S107\"AConstructor has 8 parameters, which is greater than 7 authorized.(ì˜ÊÝÿÿÿÿÿ
+T
+java:S1117"9Rename "total" which hides the field declared at line 10.(ÓŸý³ûÿÿÿÿ
+Q	java:S125v"<This block of commented-out lines of code should be removed.(•ß¹•
+D
+java:S1128".Remove this unused import 'java.util.Objects'.(¼¸õ›
